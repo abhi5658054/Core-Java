@@ -1,0 +1,25 @@
+A Pizza shop wants to set up a Pizza store.
+
+It plans to provide different types of Pizza and the customer can choose different types of customizations below
+
+Crust - Thin Crust, Cheese Burst, Classic Pan
+Toppings - Corn, Chicken, Paneer, Pineapple, Pepperoni
+Sides - Coke, Fries, Wedges, Nachos
+The shop provides offers periodically listed below and should be applied for all the pizza's which are ordered.
+
+20OFF - 20% off
+50OFF - 50% off
+ 
+
+The pizza should have a price (Ignore the currency for now). The overall price of the order varies based on the Crust, toppings, sides & discounts chosen
+
+With the above inputs design the Java class for Pizza
+
+ 
+
+ 
+
+Submission Format -
+
+Submit the assignment in a single folder by a single Pull Request with the name "Week 2 Assignment 2" to the "Core-Java" Repo. The folder should contain all the respective .java file
+Share the repository URL link for reference
