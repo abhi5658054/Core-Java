@@ -1,0 +1,70 @@
+1. Build an Auction system where there are four item to be sold.
+
+There are 4 bidders bidding for the Items
+
+Item : 
+		id - long
+		name - String
+		basePrice - double
+		desc - String
+
+Bidder :
+		id - long
+		name = String
+	
+Items
+      Car -> 1, "Swift-Dezire", 5_00_000, "good condition car"
+      TV  -> 2, "Sony-Bravia", 10_000, "in excellent condition"
+      Bike ->3, "Bajaj- Pulsar", 30_000, "run for 20000 Kms"
+      laptop -> 4, "Macbook-Pro", 50000, "one year old laptop. Sparingly used"
+
+Bidder :
+	  Vinay -> 1, Vinay 
+      Krishna -> 2, Krishna 
+      Mohan -> 3, Mohan 
+      Rohan -> 4, Rohan 
+ 
+ There is an auction class, which takes each items from a set and puts on auction.
+ All bidders, will provide their price and after all the bidders have completed bidding,
+ the auction class will decide the bidder.
+ 
+ Then the Auction will continue to the next item till all items are bid.
+ 
+ Sample Output:
+ 
+ =============Swift Dezire for Sale, Base Price - 5_00_000================
+ 
+ (All four bidders will be processing input in 4 threads waiting for inputs)
+
+    Bidder1 - Vinay
+    ===============Please enter your bid price, Base price - 5_00_000 ==========
+    wait for input using scanner 
+    
+    Bidder2 -Krishna
+    ===============Please enter your bid price, Base price - 5_00_000 ==========
+    wait for input using scanner 
+    
+    Bidder3 - Mohan
+    ===============Please enter your bid price, Base price - 5_00_000 ==========
+    wait for input using scanner 
+    
+    Bidder4 - Rohan
+    ===============Please enter your bid price, Base price - 5_00_000 ==========
+    wait for input using scanner 
+
+    (After the input is accepted, reduce the countdown latch)
+
+    After the latch is zero, then announce the winner 
+
+    ============Swift Dezire sold to Mohan - 600000=================== 
+
+    Move on to the next item and continue till all items are exhausted 
+
+    (hint - Make use of CountdownLatch with number of bidders )
+
+     Packages 
+        com.greatlearning.model 
+            Item.java 
+            Bidder.java 
+        com.greatlearning.client 
+            Auction.java  
